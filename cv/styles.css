@@ -1,169 +1,153 @@
+/* General Styles */
 body {
-    margin: 20px;
+    margin: 0;
+    font-family: 'Baskervville SC', serif;
+    background-color: #F0F8FF; /* Background Color */
+    color: #333333; /* Text Color */
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(188, 188, 210);
-    padding: 5px;
-    border-radius:15px 15px 0 0;
+    background-color: #100120; /* Primary Color */
+    color: #FFFFFF; /* White text */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between name and contact link */
+    padding: 10px;
+    align-items: center; /* Center items vertically */
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(166, 166, 201);
-    padding: 5px;
-    border-radius: 0 0 15px 15px;
-}
-
-.bodySection {
-    padding-left: 15px;
-}
-
-.splash {
-    background-image: rgb(36, 36, 159);
-    padding: 5px;
-    border-radius: 20px;
-    margin: 10px;
-    z-index: 1;
-}
-
-#mainSection {
-    background-color: rgb(84, 148, 204);
-    padding: 5px;
-    background-image: linear-gradient(rgb(188, 188, 210), lavender, lavender, rgb(166, 166, 201), rgb(166, 166, 201));
-    z-index: 99;
-}
-
-h1 {
-    font-family: "Baskervville SC", serif;
-    font-weight: bolder;
-    font-style: italic;
-}
-
-img {
-    border: 3px solid black;
-    border-radius: 10px;
-}
-
-#addressParagraph {
-    font-weight: 600;
-    font-size: 14px;
-    color: darkslategray;
-}
-
-#lineParagraph {
-    font-style: italic;
-    font-size: 18px;
-}
-
-hr {
-    height: 4px;
-    color: #6d4d58;
-    background: #6d4d58;
-    font-size: 0;
-    border: 0;
-}
-
-section h2 {
-    font-family: "Baskervville SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: darkslategrey
-}
-  
-dt, dd, dl, li {
-    text-align: left;
-    font-style: italic;
-    line-height: 2;
-    list-style-type: none;
-    margin-left: 0em;
-    font-size: 14px;
-}
-
-dd {
-    margin-left: 2em;
+nav p, nav a {
+    margin: 0;
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
 }
 
 a {
-    text-decoration: none;
-}
-
-a:link, a:visited {
-    color: blueviolet;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     transition: .5s;
 }
-  
-a:hover, a:active {
-    color: purple;
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
     transform: scale(1.05);
 }
 
-.one-col {
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-}
-
-span {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input:focus, textarea:focus {
-    background-color: lavender;
-    border: 2px solid black;
-}
-
-input:hover, textarea:hover {
-    background-color: lavender;
-    border: 2px solid black;
-}
-
-input, textarea, .one-col span{
+footer {
+    background-color: #000000; /* Primary Color */
+    color: #FFFFFF; /* White text */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content */
     padding: 10px;
-    margin-bottom: 10px;
-    transition: .3s;
 }
 
+footer a {
+    color: #32CD32; /* Accent Color */
+    text-decoration: none;
+}
+
+/* Splash Page */
+.splash {
+    text-align: center; /* Center text */
+    padding: 20px;
+    height: 400px;
+}
+
+.splash h1 {
+    font-family: 'Baskervville SC', serif; /* Google font */
+    font-size: 2.5em; /* Font size */
+    color: #1E90FF; /* Primary Color */
+}
+
+.splash img {
+    border-radius: 30%; /* Circular image */
+    border: 2px solid #1E90FF; /* Border color */
+    margin-left: 10px;
+}
+
+#addressParagraph {
+    font-size: 1em; /* Font size */
+    color: #666; /* Text color */
+}
+
+#lineParagraph {
+    font-size: 1.2em; /* Font size */
+    color: #1E90FF; /* Primary Color */
+}
+
+/* Borders and Sections */
+hr {
+    border: 2px solid #100120; /* Secondary Color */
+    margin: 20px 0; /* Margin */
+}
+
+h2 {
+    font-family: 'Baskervville SC', serif; /* Google font */
+    color: #1E90FF; /* Primary Color */
+}
+
+p {
+    font-size: 1em; /* Default font size */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+ul li {
+    margin: 10px 0; /* Margin */
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Grid layout */
+    gap: 10px; /* Space between columns */
+}
+
+/* Project Cards */
 .three-col {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px 10px;
-    margin-bottom: 20px;
-}
-
-input[type=submit] {
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    transition: .5s;
-}
-
-input[type=submit]:hover {
-    transform: scale(1.05);
-    font-size: 16px;
-    margin-bottom: scale(.7);
-    cursor: pointer;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between cards */
 }
 
 .card {
-    display: block;
-    background-color: antiquewhite;
-    border: solid 3px black;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px gray;
+    border: 1px solid #FF6347; /* Secondary Color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #FFFFFF; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    padding: 10px; /* Padding */
 }
 
-div img {
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
+.card img {
+    width: 200px; /* Full width */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Contact Page */
+.one-col {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width */
+    margin: auto; /* Center horizontally */
+}
+
+form input, form textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    margin-bottom: 10px; /* Space between elements */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+form textarea {
+    height: 150px; /* Height */
+}
+
+.projectsSection {
+    margin: 10px;
+}
+
+.bodySection {
+    margin: 10px;
 }

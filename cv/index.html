@@ -5,81 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
     <title>Hudson O'Donnell</title>
-    
 </head>
 <body>
     <nav>
         <p>Hudson O'Donnell</p>
         <a href="contact.html"><p>Contact Hudson</p></a>
-
     </nav>
-    <section id="mainSection">
-        <section class="splash">
-            <h1>Hudson O'Donnell</h1>
-            <img src="images/headshot.jpg" alt="Profile Picture" width="100px">
-            <p id="addressParagraph">150 Westpark Drive &#183 706-343-7446 &#183 hudsonodonnell2004@gmail.com</p>
-            <p id="lineParagraph">Asiring Software Engineer and Computer Science student at the University of Georgia</p>
+    <section class="splash">
+        <h1>Hudson O'Donnell</h1>
+        <img src="images/headshot.jpg" alt="Hudson O'Donnell" width="100px">
+        <p>150 Westpark Drive &#183; 706-343-7446 &#183; hudsonodonnell2004@gmail.com</p>
+        <p>Aspiring Software Engineer and Computer Science student at the University of Georgia</p>
+    </section>
+    <hr>
+    <section  class="bodySection">
+        <section>
+            <h2>Education</h2>
+            <p>Bachelor in Computer Science, UGA, Expected Graduation: 2025 - GPA: 3.63/4.0 - Zell B. Miller Scholarship - Dean's List</p>
         </section>
-        <hr>
-        <section class="bodySection">
-            <section>
-                <h2>Education</h2>
-                <p id="educationParagraph">Bachelor Computer Science UGA 2025 - GPA: 3.63/4.0 - Zell B. Miller Scholorship - Dean's List</p>
-            </section>
-            <section>
-                <h2>Honors and Awards</h2>
-                <dl>
-                    <dt>Zell B. Miller Scholorship</dt>
-                    <dd>2022-Present</dd>
-                    <dt>Dean's List</dt>
-                    <dd>2022-Present</dd>
-                </dl>
-            </section>
-            <section>
-                <h2>Skills</h2>
+        <section>
+            <h2>Honors and Awards</h2>
+            <dl>
+                <dt>Zell B. Miller Scholarship</dt>
+                <dd>2022-Present</dd>
+                <dt>Dean's List</dt>
+                <dd>2022-Present</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
                 <li><b>Programming Languages:</b> Python, Java, JavaScript, C, C++, HTML, CSS</li>
-                <li><b>Libraries/Tools:</b>Docker, Kubernetes, Numpy, Pandas, Matplotlib, Git, Gitlab</li>
-                <li><b>Databases:</b> MongoDB, mySQL</li>
-            </section>
-            <!-- nodjnsof-->
-            <section>
-                <h2>Leadership and Experience</h2>
-                <dl>
-                    <a href="https://nymbus.com/"><dt>Nymbus Developer Operations Intern, Athens, GA</dt></a>
-                    <dd>06/2024-Present</dd>
-                    <a href="https://www.thechophouse.com/index.html"><dt>Chop House Server, Athens, GA</dt></a>
-                    <dd>05/2023-08/2024</dd>
-                </dl>
-            </section>
-            <section>
-                    <h2>Projects</h2>
-                <div class="three-col">
-                    <div class="card">
-                        <img src="https://production-media.paperswithcode.com/datasets/4fdf2b82-2bc3-4f97-ba51-400322b228b1.png" alt="Project 1">
-                        <h3>CIFAR 10 Linear/Convolutional Classifier</h3>
-                        <li>Implemented and compared the performance of linear and convolutional classifiers on the CIFAR-10 dataset, a dataset comprising 60,000 32x32 color images across 10 classes.</li>
-                        <li>Techniques such as batch normalization, ADAM, and dropout were used to optimize accuracy to over 80 percent.</li>
-                    </div>
-                    <div class="card">
-                        <img src="https://store-images.microsoft.com/image/apps.30256.9007199266682902.cbc2e675-3a1a-462d-882b-c1bfa6aa1bc6.38b8e90a-ec73-45ae-b281-f4ad9ff25cb6?mode=scale&q=90&h=200&w=200&background=%23491bc5" alt="Project 2">
-                        <h3>Snake Game</h3>
-                        <li>Used JavaFX to create a playable game of snake with adjustable gameplay settings.</li>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.altap.cz/images/salamander/features/file-comparator-text-binary-files-compare.1508784171.png" alt="Project 3">
-                        <h3>File Comparison Tool</h3>
-                        <li>Implemented file comparison functionality in C, comparing two input files byte by byte.</li>
-                    </div>
-                </div>
-            </section>
+                <li><b>Libraries/Tools:</b> Docker, Kubernetes, Numpy, Pandas, Matplotlib, Git, GitLab</li>
+                <li><b>Databases:</b> MongoDB, MySQL</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Leadership and Experience</h2>
+            <dl>
+                <dt><a href="https://nymbus.com/">Nymbus Developer Operations Intern, Athens, GA</a></dt>
+                <dd>06/2024-Present</dd>
+                <dt><a href="https://www.thechophouse.com/">Chop House Server, Athens, GA</a></dt>
+                <dd>05/2023-08/2024</dd>
+            </dl>
         </section>
     </section>
+    <section class="projectsSection">
+        <h2>Projects</h2>
+        <ul class="three-col">
+            <li class="card">
+                <img src="https://production-media.paperswithcode.com/datasets/4fdf2b82-2bc3-4f97-ba51-400322b228b1.png" alt="CIFAR 10 Linear/Convolutional Classifier">
+                <h3>CIFAR 10 Linear/Convolutional Classifier</h3>
+                <ul>
+                    <li>Implemented and compared the performance of linear and convolutional classifiers on the CIFAR-10 dataset, a dataset comprising 60,000 32x32 color images across 10 classes.</li>
+                    <li>Techniques such as batch normalization, ADAM, and dropout were used to optimize accuracy to over 80 percent.</li>
+                </ul>
+            </li>
+            <li class="card">
+                <img src="https://production-media.paperswithcode.com/datasets/4fdf2b82-2bc3-4f97-ba51-400322b228b1.png" alt="CIFAR 10 Linear/Convolutional Classifier">
+                <h3>CIFAR 10 Linear/Convolutional Classifier</h3>
+                <ul>
+                    <li>Implemented and compared the performance of linear and convolutional classifiers on the CIFAR-10 dataset, a dataset comprising 60,000 32x32 color images across 10 classes.</li>
+                    <li>Techniques such as batch normalization, ADAM, and dropout were used to optimize accuracy to over 80 percent.</li>
+                </ul>
+            </li>
+            <li class="card">
+                <img src="https://production-media.paperswithcode.com/datasets/4fdf2b82-2bc3-4f97-ba51-400322b228b1.png" alt="CIFAR 10 Linear/Convolutional Classifier">
+                <h3>CIFAR 10 Linear/Convolutional Classifier</h3>
+                <ul>
+                    <li>Implemented and compared the performance of linear and convolutional classifiers on the CIFAR-10 dataset, a dataset comprising 60,000 32x32 color images across 10 classes.</li>
+                    <li>Techniques such as batch normalization, ADAM, and dropout were used to optimize accuracy to over 80 percent.</li>
+                </ul>
+            </li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </section>
     <footer>
-        <p style="display: inline;">	&#169; Hudson O'Donnell &#183 <a href="https://linkedin.com/in/hudsonlo/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p> 
+        <p>&copy; 2024 Hudson O'Donnell &#183; <a href="contact.html">Contact Hudson</a> &#183; <a href="https://linkedin.com/in/hudsonlo/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
     </footer>
 </body>
 </html>
